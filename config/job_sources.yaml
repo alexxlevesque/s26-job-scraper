@@ -4,7 +4,18 @@ job_sources:
     enabled: true
     base_url: "https://www.linkedin.com/jobs/search"
     search_params:
-      keywords: ["intern", "summer analyst", "summer intern", "student intern", "apprenticeship", "internship", "co-op", "coop"]
+      keywords: [
+        "intern",
+        "summer analyst", 
+        "summer intern",
+        "student intern",
+        "apprenticeship",
+        "internship",
+        "co-op",
+        "coop",
+        "2026",
+        "summer 2026"
+      ]
       location: "Canada"
       experience_level: "Entry level"
 
@@ -29,5 +40,10 @@ filters:
     - global markets
     - capital markets
     - trading
+    - finance
+    - quant
+    - quantitative
+    - AI
+    - deep learning
   included_keywords: ["intern", "summer analyst", "summer intern", "student intern", "apprenticeship", "internship", "co-op", "coop"]
   excluded_keywords: ["senior", "lead", "manager", "director"] 
