@@ -26,6 +26,7 @@ def get_latest_jobs(limit=15):
         title,
         company,
         location,
+        url,
         'LinkedIn' as source
     FROM jobs 
     WHERE location LIKE '%Canada%' 
@@ -78,20 +79,27 @@ def update_readme_table(jobs):
     
     # Create new table content
     table_lines = [
-        "| Date Added | Position | Company | Location | Source |",
-        "|------------|----------|---------|----------|---------|"
+        "| Date Added | Position | Company | Location | Source | Link |",
+        "|------------|----------|---------|----------|---------|------|"
     ]
     
     for job in jobs:
-        scraped_date, title, company, location, source = job
+        scraped_date, title, company, location, url, source = job
         date_formatted = format_date(scraped_date)
         
         # Clean and truncate fields for table display
-        title_clean = (title or "N/A")[:50] + "..." if len(title or "") > 50 else (title or "N/A")
-        company_clean = (company or "N/A")[:30] + "..." if len(company or "") > 30 else (company or "N/A")
-        location_clean = (location or "N/A")[:40] + "..." if len(location or "") > 40 else (location or "N/A")
+        title_clean = (title or "N/A")[:40] + "..." if len(title or "") > 40 else (title or "N/A")
+        company_clean = (company or "N/A")[:25] + "..." if len(company or "") > 25 else (company or "N/A")
+        location_clean = (location or "N/A")[:30] + "..." if len(location or "") > 30 else (location or "N/A")
         
-        table_lines.append(f"| {date_formatted} | {title_clean} | {company_clean} | {location_clean} | {source} |")
+        # Create clickable link if URL exists
+        if url and url != "N/A":
+            link_text = "Apply"
+            link_markdown = f"[{link_text}]({url})"
+        else:
+            link_markdown = "N/A"
+        
+        table_lines.append(f"| {date_formatted} | {title_clean} | {company_clean} | {location_clean} | {source} | {link_markdown} |")
     
     # Create the new table section
     new_table_section = "\n".join(table_lines)
