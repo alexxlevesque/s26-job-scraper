@@ -18,7 +18,16 @@ custom_urls:
 
 # Job filtering preferences
 filters:
-  locations: ["Canada", "Toronto", "Vancouver", "Montreal", "Calgary", "Ottawa", "Edmonton", "Winnipeg", "Quebec City", "Remote"]
-  required_skills: ["python", "javascript", "sql", "aws"]
+  locations: ["Canada", "Toronto", "Vancouver", "Montreal", "Ottawa", "Remote"]
+  required_skills: 
+    - python
+    - sql
+    - aws
+    - azure
+    - machine learning
+    - data science
+    - global markets
+    - capital markets
+    - trading
   included_keywords: ["intern", "summer analyst", "summer intern", "student intern", "apprenticeship", "internship", "co-op", "coop"]
   excluded_keywords: ["senior", "lead", "manager", "director"] 
