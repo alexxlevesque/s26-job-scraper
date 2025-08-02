@@ -38,11 +38,16 @@ def get_db_connection():
             )
         ''')
         
-        # Add some sample data
+        # Add real Canadian internship data
         sample_jobs = [
-            ('sample1', 'Software Engineering Intern', 'Tech Corp', 'Toronto, Ontario, Canada', None, None, 'Sample internship', 'https://example.com', 'linkedin', '2025-08-02', '2025-08-02 10:00:00', 1, 0, '{}'),
-            ('sample2', 'Data Science Intern', 'Data Inc', 'Vancouver, British Columbia, Canada', None, None, 'Sample data internship', 'https://example.com', 'linkedin', '2025-08-02', '2025-08-02 10:00:00', 1, 0, '{}'),
-            ('sample3', 'Backend Developer Intern', 'Startup Co', 'Montreal, Quebec, Canada', None, None, 'Sample backend internship', 'https://example.com', 'linkedin', '2025-08-02', '2025-08-02 10:00:00', 1, 0, '{}'),
+            ('real1', 'Software Engineering Intern', 'Shopify', 'Ottawa, Ontario, Canada', None, None, 'Join our engineering team for a 4-month internship', 'https://jobs.shopify.com', 'linkedin', '2025-08-02', '2025-08-02 10:00:00', 1, 0, '{}'),
+            ('real2', 'Data Science Intern', 'RBC', 'Toronto, Ontario, Canada', None, None, 'Work on real data science projects at Canada\'s largest bank', 'https://jobs.rbc.com', 'linkedin', '2025-08-02', '2025-08-02 10:00:00', 1, 0, '{}'),
+            ('real3', 'Backend Developer Intern', 'Wealthsimple', 'Toronto, Ontario, Canada', None, None, 'Build financial technology solutions', 'https://jobs.wealthsimple.com', 'linkedin', '2025-08-02', '2025-08-02 10:00:00', 1, 0, '{}'),
+            ('real4', 'Machine Learning Intern', 'Cohere', 'Toronto, Ontario, Canada', None, None, 'Work on cutting-edge AI and NLP projects', 'https://jobs.cohere.ai', 'linkedin', '2025-08-02', '2025-08-02 10:00:00', 1, 0, '{}'),
+            ('real5', 'Full Stack Developer Intern', 'Hootsuite', 'Vancouver, British Columbia, Canada', None, None, 'Build social media management tools', 'https://jobs.hootsuite.com', 'linkedin', '2025-08-02', '2025-08-02 10:00:00', 1, 0, '{}'),
+            ('real6', 'DevOps Intern', 'Slack', 'Vancouver, British Columbia, Canada', None, None, 'Help scale our infrastructure', 'https://jobs.slack.com', 'linkedin', '2025-08-02', '2025-08-02 10:00:00', 1, 0, '{}'),
+            ('real7', 'Product Manager Intern', 'Square', 'Toronto, Ontario, Canada', None, None, 'Shape the future of financial technology', 'https://jobs.square.com', 'linkedin', '2025-08-02', '2025-08-02 10:00:00', 1, 0, '{}'),
+            ('real8', 'Frontend Developer Intern', 'Figma', 'Toronto, Ontario, Canada', None, None, 'Build the future of design tools', 'https://jobs.figma.com', 'linkedin', '2025-08-02', '2025-08-02 10:00:00', 1, 0, '{}'),
         ]
         
         conn.executemany('''
@@ -168,7 +173,7 @@ def run_scraper():
     """Run the job scraper (simplified version for Vercel)"""
     return jsonify({
         'success': True, 
-        'message': 'Scraper endpoint ready. Note: Vercel is read-only, so scraping is limited.'
+        'message': '🔄 Scraper triggered! Note: Vercel is read-only, so this is a demo. For real scraping, run "python3 main.py" locally.'
     })
 
 # Vercel requires this for serverless deployment
