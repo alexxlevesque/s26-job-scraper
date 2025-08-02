@@ -13,6 +13,36 @@ A Python-based job monitoring system that scrapes LinkedIn for Canadian internsh
 - 🇨🇦 Focused on Canadian job market
 - 🎓 Specialized for student and internship opportunities
 
+## 📊 Latest Scraped Internships
+
+| Date Added | Position | Company | Location | Source |
+|------------|----------|---------|----------|---------|
+| 2025-08-02 | Software Engineering Intern | Shopify | Ottawa, Ontario, Canada | LinkedIn |
+| 2025-08-02 | Data Science Intern | RBC | Toronto, Ontario, Canada | LinkedIn |
+| 2025-08-02 | Backend Developer Intern | Wealthsimple | Toronto, Ontario, Canada | LinkedIn |
+| 2025-08-02 | Machine Learning Intern | Cohere | Toronto, Ontario, Canada | LinkedIn |
+| 2025-08-02 | Full Stack Developer Intern | Hootsuite | Vancouver, British Columbia, Canada | LinkedIn |
+| 2025-08-02 | DevOps Intern | Slack | Vancouver, British Columbia, Canada | LinkedIn |
+| 2025-08-02 | Product Manager Intern | Square | Toronto, Ontario, Canada | LinkedIn |
+| 2025-08-02 | Frontend Developer Intern | Figma | Toronto, Ontario, Canada | LinkedIn |
+| 2025-08-02 | Backend Developer Intern - Fall 2025 | Blaise Transit | Montreal, Quebec, Canada | LinkedIn |
+| 2025-08-02 | Software Engineering Intern (12 Months) | Super.com | Canada | LinkedIn |
+| 2025-08-02 | Intern, Workplace Operations (Fall 2025) | Wealthsimple | Toronto, Ontario, Canada | LinkedIn |
+| 2025-08-02 | Software Intern Fall 2025 | Rocket Lab | Toronto, Ontario, Canada | LinkedIn |
+| 2025-08-02 | Product Analyst Intern | Synthesis Health | Vancouver, British Columbia, Canada | LinkedIn |
+| 2025-08-02 | Data Associate (Fall/Winter Internship) | Lumerate | Ontario, Canada | LinkedIn |
+| 2025-08-02 | Social Media Intern (Remote, Paid) | EDUopinions | Canada | LinkedIn |
+
+*Last updated: August 2, 2025*
+
+## 📈 Database Statistics
+
+- **Total Jobs**: 344
+- **Canadian Internships**: 105
+- **Sources**: LinkedIn (primary)
+- **Latest Scrape**: August 2, 2025
+- **Active Keywords**: intern, summer analyst, summer intern, student intern, apprenticeship, internship, co-op, coop
+
 ## Setup
 
 1. **Install dependencies:**
