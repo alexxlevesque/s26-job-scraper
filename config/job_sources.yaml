@@ -1,0 +1,24 @@
+# Job Sources Configuration
+job_sources:
+  linkedin:
+    enabled: true
+    base_url: "https://www.linkedin.com/jobs/search"
+    search_params:
+      keywords: ["intern", "summer analyst", "summer intern", "student intern", "apprenticeship", "internship", "co-op", "coop"]
+      location: "Canada"
+      experience_level: "Entry level"
+
+# Custom URLs to scrape
+custom_urls:
+  # Add real Canadian job board URLs here
+  # Example:
+  # - name: "Workopolis"
+  #   url: "https://www.workopolis.com/jobsearch/find-jobs?ak=python+developer&l=Canada"
+  #   enabled: false
+
+# Job filtering preferences
+filters:
+  locations: ["Canada", "Toronto", "Vancouver", "Montreal", "Calgary", "Ottawa", "Edmonton", "Winnipeg", "Quebec City", "Remote"]
+  required_skills: ["python", "javascript", "sql", "aws"]
+  included_keywords: ["intern", "summer analyst", "summer intern", "student intern", "apprenticeship", "internship", "co-op", "coop"]
+  excluded_keywords: ["senior", "lead", "manager", "director"] 
