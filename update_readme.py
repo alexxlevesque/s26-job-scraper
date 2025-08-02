@@ -109,7 +109,7 @@ def update_readme_table(jobs):
     
     # Replace the table section in README
     # Find the table section and replace it
-    table_pattern = r'(\| Date Added \| Position \| Company \| Location \| Source \|\n\|-+\|.*?\n(?:\|.*\|\n)*)'
+    table_pattern = r'(\| Date Added \| Position \| Company \| Location \| Source \| Link \|\n\|-+\|.*?\n(?:\|.*\|\n)*)'
     
     if re.search(table_pattern, content, re.DOTALL):
         # Replace existing table
