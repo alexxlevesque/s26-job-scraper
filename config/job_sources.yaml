@@ -46,4 +46,8 @@ filters:
     - AI
     - deep learning
   included_keywords: ["intern", "summer analyst", "summer intern", "student intern", "apprenticeship", "internship", "co-op", "coop"]
-  excluded_keywords: ["senior", "lead", "manager", "director"] 
+  excluded_keywords: [
+    "senior", "lead", "manager", "director",
+    "master's", "master", "mba",
+    "phd", "phd student", "phd candidate"
+  ]

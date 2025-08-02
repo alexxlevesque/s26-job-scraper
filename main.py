@@ -1,5 +1,7 @@
 import yaml
 import logging
+import subprocess
+import sys
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict
@@ -108,6 +110,25 @@ class JobScraper:
         else:
             self.logger.info("No new jobs to notify about")
     
+    def update_readme(self):
+        """Update README with latest scraped jobs"""
+        try:
+            self.logger.info("📝 Updating README with latest jobs...")
+            
+            # Run the README updater script
+            result = subprocess.run([sys.executable, 'update_readme.py'], 
+                                  capture_output=True, text=True, cwd=Path(__file__).parent)
+            
+            if result.returncode == 0:
+                self.logger.info("✅ README updated successfully")
+                if result.stdout:
+                    self.logger.info(result.stdout.strip())
+            else:
+                self.logger.warning(f"⚠️  README update failed: {result.stderr}")
+                
+        except Exception as e:
+            self.logger.error(f"❌ Error updating README: {e}")
+    
     def run(self):
         """Main execution method"""
         try:
@@ -116,6 +137,9 @@ class JobScraper:
             
             # Send notifications
             self.send_notifications(new_jobs)
+            
+            # Update README with latest jobs
+            self.update_readme()
             
             self.logger.info(f"✅ Scraping completed! Found {len(new_jobs)} new jobs")
             
