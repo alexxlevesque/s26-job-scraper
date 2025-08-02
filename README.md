@@ -21,8 +21,9 @@ A Python-based job monitoring system that scrapes LinkedIn for Canadian internsh
 | 2025-08-02 | Scrum Master — Master-Level Internship | Vosyn | Etobicoke, Ontario, Canada | LinkedIn |
 | 2025-08-02 | Capital Markets — Master-Level Internship | Vosyn | Etobicoke, Ontario, Canada | LinkedIn |
 | 2025-08-02 | Product Analyst Intern | Synthesis Health | Vancouver, British Columbia, Canada | LinkedIn |
-| 2025-08-02 | Social Media Intern (Remote, Paid) | EDUopinions | Canada | LinkedIn |
 | 2025-08-02 | Data Associate (Fall/Winter Internship) | Lumerate | Ontario, Canada | LinkedIn |
+| 2025-08-02 | Frontend Developer Intern - Fall 2025 Semester (Se... | Blaise Transit | Montreal, Quebec, Canada | LinkedIn |
+| 2025-08-02 | Social Media Intern (Remote, Paid) | EDUopinions | Canada | LinkedIn |
 | 2025-08-02 | Finance — Master-Level Internship | Vosyn | Etobicoke, Ontario, Canada | LinkedIn |
 | 2025-08-02 | Backend Developer Intern - Fall 2025 Semester (Sep... | Blaise Transit | Montreal, Quebec, Canada | LinkedIn |
 | 2025-08-02 | Market Research Analyst — Master-Level Internship | Vosyn | Toronto, Ontario, Canada | LinkedIn |
@@ -30,18 +31,15 @@ A Python-based job monitoring system that scrapes LinkedIn for Canadian internsh
 | 2025-08-02 | Intern, Workplace Operations (Fall 2025) | Wealthsimple | Toronto, Ontario, Canada | LinkedIn |
 | 2025-08-02 | Project Management Specialist — Master-Level Inter... | Vosyn | Etobicoke, Ontario, Canada | LinkedIn |
 | 2025-08-02 | Back End Developer - Master-Level Internship | Vosyn | Etobicoke, Ontario, Canada | LinkedIn |
-| 2025-08-02 | Financial Modeling — Master-Level Internship | Vosyn | Etobicoke, Ontario, Canada | LinkedIn |
-| 2025-08-02 | Software Intern Fall 2025 | Rocket Lab | Toronto, Ontario, Canada | LinkedIn |
-*Last updated: August 02, 2025*
+| 2025-08-02 | Financial Modeling — Master-Level Internship | Vosyn | Etobicoke, Ontario, Canada | LinkedIn |*Last updated: August 02, 2025*
 
 ## 📈 Database Statistics
 
-- **Total Jobs**: 344
-- **Canadian Internships**: 231
+- **Total Jobs**: 494
+- **Canadian Internships**: 381
 - **Sources**: LinkedIn (primary)
 - **Latest Scrape**: 2025-08-02
-- **Active Keywords**: intern, summer analyst, summer intern, student intern, apprenticeship, internship, co-op, coop
-## Setup
+- **Active Keywords**: intern, summer analyst, summer intern, student intern, apprenticeship, internship, co-op, coop## Setup
 
 1. **Install dependencies:**
    ```bash
